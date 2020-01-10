@@ -1,0 +1,81 @@
+class Main {
+  public static void main(String[] args) {
+    // Cat cat_obj = new Cat();
+    // cat_obj.calling();
+     Dog dog_obj = new Dog();
+     dog_obj.calling();
+
+     Human human_obj = new Human();
+     human_obj.eat();
+     human_obj.walk();
+    
+     
+     
+  }
+}
+
+class Animal
+{
+  //which sound does animal provide
+  public void sound(String sound)
+  {
+     System.out.println("Animal Sound is : "+" "+sound);
+  }
+  // which food does animal eat
+  public void food(String animal_name, String animal_food)
+  {
+    System.out.println(animal_name+" "+"eat"+" "+animal_food);
+  }
+
+}
+// Cat class which represend the speacification of cat
+class Cat
+{
+  public void calling()
+  {
+     Animal animal_obj = new Animal();
+     animal_obj.food("Cat", "Raw meat");
+  }
+}
+
+
+// Dog class which represend the speacification of cat
+class Dog
+{
+  public void calling()
+  {
+     Animal animal_obj = new Animal();
+     animal_obj.food("Dog", "Bone");
+  }
+}
+
+
+
+// Tiger class which represend the speacification of cat
+class Tiger
+{
+  public void calling()
+  {
+     Animal animal_obj = new Animal();
+     animal_obj.food("Tiger", "Raw meat of animal");
+  }
+}
+
+
+
+//Examples of inheritance 
+
+
+class Walk
+{  
+ public void walk(){
+   System.out.println("Human can walk.");
+ }
+}  
+
+class Human extends Walk{  
+ 
+ public void eat(){
+   System.out.println("Human can eat.");
+ }
+}
